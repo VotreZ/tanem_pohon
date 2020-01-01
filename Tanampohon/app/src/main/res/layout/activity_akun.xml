@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AkunActivity"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="176dp"
+        android:text="Nama"
+        app:layout_constraintEnd_toStartOf="@+id/txt_nama2"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="Email"
+        app:layout_constraintEnd_toStartOf="@+id/txt_email2"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="User"
+        app:layout_constraintEnd_toStartOf="@+id/txt_user2"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Pass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txt_pass2"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <EditText
+        android:id="@+id/txt_nama2"
+        android:layout_width="301dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="48dp"
+        android:hint="nama"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_email2"
+        android:layout_width="301dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:hint="email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nama2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_user2"
+        android:layout_width="301dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:hint="username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_pass2"
+        android:layout_width="301dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_user2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_logout"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/btn_logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_edit"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/btn_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_logout"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.993"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="78dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/akunijo" />
+
+    <TextView
+        android:id="@+id/idd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/transparent"
+        tools:ignore="MissingConstraints" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/btn_kembali"-->
+<!--        android:layout_width="52dp"-->
+<!--        android:layout_height="51dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@drawable/home_100px"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.955"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.005" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

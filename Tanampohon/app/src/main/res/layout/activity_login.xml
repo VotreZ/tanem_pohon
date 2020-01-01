@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/bg1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/pohon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/tree_128px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="118dp"
+            android:layout_below="@+id/pohon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="105dp"
+            android:background="@drawable/text_logo" />
+
+        <EditText
+            android:id="@+id/ed_user"
+            android:layout_width="720px"
+            android:layout_height="100px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="330dp"
+            android:background="@drawable/kotak"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/ed_pass"
+            android:layout_width="720px"
+            android:layout_height="100px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/kotak"
+            android:layout_below="@id/ed_user"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_pass"
+
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginBottom="169dp"
+            android:background="@drawable/btn_login" />
+
+        <TextView
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="520dp"
+            android:layout_marginEnd="117dp"
+            android:layout_marginBottom="200dp"
+            android:gravity="center"
+            android:text="Belum punya akun? Daftar Sekarang!"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_id_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="0"
+            android:textColor="@android:color/transparent"
+            android:textSize="1sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

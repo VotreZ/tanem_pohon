@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".DonasiActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+
+            android:paddingTop="40dp"
+            android:textColor="#38D165"
+            android:layout_gravity="center"
+            android:text="TOTAL DONASI ANDA"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+               android:textSize="20dp"
+                android:layout_marginLeft="100dp"
+                android:paddingTop="7dp"
+                android:textColor="#000"
+                android:text="Rp."/>
+
+            <TextView
+                android:id="@+id/txt_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="#000"
+                android:text="...."/>
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kode Donasi"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/kd_byr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:text="Pilih Metode Pembayaran"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_metode"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+                android:entries="@array/metode_bayar">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+            <ImageView
+                android:id="@+id/btn_donasi"
+                android:layout_width="wrap_content"
+                android:background="@drawable/btn_donasi"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_bankkk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#fff"
+        android:textSize="1sp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="6dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

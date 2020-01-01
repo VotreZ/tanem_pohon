@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tanampohon</string>
+    <string-array name="metode_bayar">
+        <item>OVO</item>
+        <item>GOPAY</item>
+        <item>DANA</item>
+        <item>PayPal</item>
+
+    </string-array>
+</resources>

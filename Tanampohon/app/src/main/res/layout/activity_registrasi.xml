@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/txtregistrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/regis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_nama"
+        android:layout_width="253dp"
+        android:layout_height="40dp"
+        android:background="@drawable/kotak"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtregistrasi"
+        app:layout_constraintVertical_bias="0.164"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="253dp"
+        android:layout_height="40dp"
+        android:background="@drawable/kotak"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nama"
+        app:layout_constraintVertical_bias="0.062"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+    android:id="@+id/txt_user"
+    android:layout_width="253dp"
+    android:layout_height="40dp"
+    android:background="@drawable/kotak"
+    android:hint="Username"
+        android:textSize="15dp"
+    android:inputType="textPersonName"
+    android:paddingStart="15dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txt_email"
+    app:layout_constraintVertical_bias="0.090"
+    tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_pass"
+        android:layout_width="253dp"
+        android:layout_height="40dp"
+        android:background="@drawable/kotak"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_user"
+        app:layout_constraintVertical_bias="0.090"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="184dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/btn_daftar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pass"
+        app:layout_constraintVertical_bias="0.166"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/id_akn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
